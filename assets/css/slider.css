@@ -1,0 +1,101 @@
+#slider {
+    overflow: hidden;
+    width: 80%;
+    position: relative;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#slider img {
+    width: 100%;
+}
+
+#imgA {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+
+}
+
+#textesA{
+    z-index: 7;
+    /* display: none; */
+    position: absolute;
+    /* top: 0rem; */
+    bottom: 3rem;
+    left: 0rem;
+    padding:2rem;
+    
+    width: 100%;
+    /* background-color: rgba(31, 31, 70, 0.568);
+    color: white; */
+    color: black;
+   
+}
+
+#coverSlider{
+    z-index: 0;
+}
+
+#textesB{
+    z-index: 5;
+    /* display: none; */
+    position: absolute;
+    /* top: 0rem; */
+    bottom: 3rem;
+    left: 0rem;
+    padding:2rem;
+    
+    width: 100%;
+    /* background-color: rgba(31, 31, 70, 0.568);
+    color: white; */
+    color: black;
+   
+}
+
+.transSlider {
+    transition: all .5s;
+}
+
+.slideRight {
+    transform: translateX(100%);
+}
+
+.slideLeft {
+    transform: translateX(-100%);
+}
+
+/* Autre effet possible */
+.fadeOut {
+    opacity: 0;
+}
+
+#prevBTN{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    z-index: 8;
+    display: flex;
+    align-items: center;
+}
+
+#nextBTN{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    z-index: 8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#prevBTN:hover, #nextBTN:hover{
+    background-color: rgb(248, 244, 244);
+    cursor: pointer;
+}
